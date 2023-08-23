@@ -9,8 +9,8 @@
 6. [Output Format](#output-format)
 7. [Examples](#examples)
 8. [Performance and Memory](#performance-and-memory)
-11. [Code File](#code-file)
-12. [Report PDF](#report-pdf)
+9. [Code File](#code-file)
+10. [Report PDF](#report-pdf)
 
 ## Introduction
 This repository contains a Python program to solve the classic 8-puzzle problem using various search algorithms. The project offers a comprehensive exploration of different search strategies to find the optimal solution for this challenging AI problem.
@@ -33,17 +33,23 @@ To use this program, provide input puzzle configurations in the specified format
 
 ## Input Format
 Input puzzle configurations should be provided in the following format, where `0` represents the empty space:
+
 ```
-[1, 2, 3,
-4, 5, 6,
-7, 8, 0]
+{1, 4, 2, 6, 5, 8, 7, 3, 0}
 ```
 
 ## Output Format
-The program will return a tuple containing the solution path, depth, and execution time. If a solution is not found, it returns `-1`.
+The program will return a tuple containing the solution path, depth, and execution time. If a solution is not found, it returns `-1`. The output format for each example should be in this format:
+
+```
+Solution Path: ['D', 'R', 'U', 'L', 'D', 'R', 'R']
+Depth: 7
+Execution Time: 0.001394 seconds
+Memory Usage: 6.925KB
+```
 
 ## Examples
-Check the "Examples.txt" file for sample input configurations and run the solver for each algorithm. Results are recorded in the "out.txt" file.
+Check the "Examples.txt" file for sample input configurations, and the corresponding results are recorded in the "out.txt" file.
 
 ## Performance and Memory
 The program includes memory tracking to measure memory consumption during execution. Results are displayed in the output file ("out.txt"). Note that long execution times may trigger a timeout mechanism.
