@@ -1,5 +1,5 @@
 # 8-Puzzle Solver
-
+![puzzle gif](8-puzzle.gif)
 ## Table of Contents
 1. [Introduction](#introduction)
 2. [Description](#description)
